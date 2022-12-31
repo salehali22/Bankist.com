@@ -297,7 +297,7 @@ const logOut = () => {
   document.querySelector(".login").style.display = "flex";
   // inputLoginPin.value = inputLoginUsername.value = "";
   labelWelcome.textContent = `Log in to Get started`;
-  logInForm.style.display = "block";
+  
 };
 
 // <------------------------------log in---------------------->
