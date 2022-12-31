@@ -334,13 +334,16 @@ btnLogin.addEventListener("click", (e) => {
     alert("wrong credentials");
     inputLoginPin.value = inputLoginUsername.value = "";
   } else {
+    
+     // clear input feilds
+    inputLoginPin.value = inputLoginUsername.value = "";
     // if (html) html.style.;
     let label = currentAccount.owner.split(" ")[0];
     inputLoginPin.value = inputLoginUsername.value = "";
     labelWelcome.textContent = `Welcome ${label}`;
     containerApp.style.opacity = 100;
 
-    // clear input feilds
+   
     document.querySelector(".login").style.display = "none";
 
     // update UI
