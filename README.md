@@ -1,7 +1,7 @@
 This project is built using HTML, CSS, and JavaScript.
 
 Accounts info to test: 
-1)
+1)\n
 username: js, pass: 1111
 2)
 username: jd, pass: 2222
