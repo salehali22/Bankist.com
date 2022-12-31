@@ -342,6 +342,7 @@ btnLogin.addEventListener("click", (e) => {
     containerApp.style.opacity = 100;
 
     // clear input feilds
+    inputLoginPin.value = inputLoginUsername.value = "";
     document.querySelector(".login").style.display = "none";
 
     // update UI
