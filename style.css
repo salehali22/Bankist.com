@@ -381,10 +381,9 @@ h2 {
   }
   .balance {
     justify-content: space-between;
-    grid-column: 1;
   }
   .balance * {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .form {
     display: flex;
@@ -415,10 +414,8 @@ h2 {
   .movements {
     max-height: 50vh;
   }
-}
-
-@media only screen and (min-width: 960px) {
-  .wrong-credentials {
-    width: 30%;
+  .balance__value {
+    font-size: 2rem;
+    margin-left: 1rem;
   }
 }
