@@ -36,9 +36,6 @@ nav {
 /* .login {
   display: inline-block;
 } */
-.popup {
-  padding: 3rem;
-}
 
 .labelInput {
   font-size: 1.5rem;
@@ -340,17 +337,6 @@ h2 {
   cursor: pointer;
 }
 
-.popup-cont {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 20px;
-  border: 1px solid #ccc;
-  height: 30rem;
-  width: 30%;
-}
 /* RESPONSIVENESS */
 
 /* <----------------app-------------> */
