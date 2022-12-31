@@ -379,9 +379,7 @@ h2 {
     margin: 2rem;
     flex-direction: column;
   }
-  .balance {
-    justify-content: space-between;
-  }
+
   .balance * {
     font-size: 1.5rem;
   }
@@ -416,6 +414,5 @@ h2 {
   }
   .balance__value {
     font-size: 2rem;
-    margin-left: 1rem;
   }
 }
