@@ -22,6 +22,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  margin-bottom: 4rem;
 }
 
 .welcome {
@@ -33,9 +34,21 @@ nav {
   height: 5.25rem;
 }
 
-/* .login {
-  display: inline-block;
-} */
+.login {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+}
+
+.login .login__btn {
+  border-radius: 1.5rem;
+  border: 1px solid gray;
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+}
 
 .labelInput {
   font-size: 1.5rem;
@@ -64,15 +77,6 @@ nav {
   color: #bbb;
 }
 
-.login__btn {
-  border: none;
-  background: none;
-  font-size: 2.2rem;
-  color: inherit;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
 .login__btn:hover,
 .login__btn:focus,
 .btn--sort:hover,
@@ -82,18 +86,17 @@ nav {
 }
 
 /* MAIN */
-/* .container-appall {
-  overflow: scroll;
-} */
+.container-appall {
+  margin: 3rem;
+}
 
 .app {
   position: relative;
   max-width: 100rem;
-  margin: 4rem auto;
+  margin: 7rem auto;
   display: flex;
-  grid-template-columns: 4fr 3fr;
-  grid-template-rows: auto repeat(3, 15rem) auto;
-  gap: 2rem;
+
+  justify-content: space-between;
   transition: all ease-in 3s;
   /* NOTE This creates the fade in/out anumation */
   opacity: 0;
@@ -130,7 +133,7 @@ nav {
   background-color: #fff;
   border-radius: 1rem;
   overflow: scroll;
-  max-height: 70vh;
+  max-height: 500px;
 }
 
 .movements__row {
@@ -212,10 +215,13 @@ nav {
 
 /* OPERATIONS */
 .operation-cont {
+  position: relative;
+  top: 8rem;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   margin-top: 8rem;
+  margin: 2rem;
 }
 
 .operation-cont * {
@@ -369,10 +375,10 @@ h2 {
   .movements__value {
     font-size: 1.4rem;
   }
-
-  .login * {
-    margin: 0.6rem 0;
+  .login {
+    flex-direction: column;
   }
+
   nav * {
     margin: 1rem;
   }
@@ -381,5 +387,16 @@ h2 {
   }
   .balance__value {
     font-size: 2rem;
+  }
+  nav .logo {
+    display: none;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-appall,
+  .operation-cont {
+    margin: 0;
   }
 }
