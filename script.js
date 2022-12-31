@@ -337,7 +337,7 @@ btnLogin.addEventListener("click", (e) => {
   } else {
     // if (html) html.style.;
     let label = currentAccount.owner.split(" ")[0];
-
+    inputLoginPin.value = inputLoginUsername.value = "";
     labelWelcome.textContent = `Welcome ${label}`;
     containerApp.style.opacity = 100;
 
