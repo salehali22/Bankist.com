@@ -334,8 +334,7 @@ btnLogin.addEventListener("click", (e) => {
     alert("wrong credentials");
     inputLoginPin.value = inputLoginUsername.value = "";
   } else {
-    
-     // clear input feilds
+    // clear input feilds
     inputLoginPin.value = inputLoginUsername.value = "";
     // if (html) html.style.;
     let label = currentAccount.owner.split(" ")[0];
@@ -343,7 +342,6 @@ btnLogin.addEventListener("click", (e) => {
     labelWelcome.textContent = `Welcome ${label}`;
     containerApp.style.opacity = 100;
 
-   
     document.querySelector(".login").style.display = "none";
 
     // update UI
@@ -389,9 +387,9 @@ btnTransfer.addEventListener("click", (e) => {
     currentAccount.balance >= amount &&
     transferToAcc.username !== currentAccount.username
   ) {
+    inputTransferAmount.value = inputTransferTo.value = "";
     currentAccount.movements.push(-amount);
     transferToAcc.movements.push(amount);
-    inputTransferAmount.value = inputTransferTo.value = "";
 
     // add Dates;
     currentAccount.movementsDates.push(new Date().toISOString());
