@@ -394,6 +394,8 @@ btnTransfer.addEventListener("click", (e) => {
     // add Dates;
     currentAccount.movementsDates.push(new Date().toISOString());
     transferToAcc.movementsDates.push(new Date().toISOString());
+  } else {
+    alert("you are not that guy");
   }
 
   // update UI
