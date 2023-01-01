@@ -394,7 +394,8 @@ btnTransfer.addEventListener("click", (e) => {
     // add Dates;
     currentAccount.movementsDates.push(new Date().toISOString());
     transferToAcc.movementsDates.push(new Date().toISOString());
-  } else {
+  }
+  if (currentAccount.balance < amount) {
     alert("you are not that guy");
   }
 
